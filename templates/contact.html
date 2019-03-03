@@ -3,11 +3,19 @@
         <title>My Contact Details</title>
     </head>
     <body>
-        <h1> 
-           Email : barbie@gmail.com 
-           Buzz me on : 9900990099
+        <ul>
+            {% for fruit in fruits %}
+                <li>{{fruit}}</li>
+            {% endfor %}
         
-        </h1>
+        </ul>
+ 
+        {% if "Mango" in fruits%}
+          <p> Mango exists in list </p>
+        {% else %}
+          <p> Mango doesn't exist in list</p>
+        {% endif %}
+           
         
     </body>
-</html>
+</html> 
