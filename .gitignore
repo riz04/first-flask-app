@@ -1,2 +1,3 @@
 venv/
-
+pract_flask.py
+templates/project.html
